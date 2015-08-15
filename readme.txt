@@ -51,4 +51,4 @@ This plugin Integrates Restrict Content Pro with Easy Digital Downloads
 * First version
 
 ==Traducciones ==
-You can read complete documentations on the [GravityForms.ir](http://www.GravityForms.ir)
+You can read complete documentations on the [webforest.ir](http://www.webforest.ir)
