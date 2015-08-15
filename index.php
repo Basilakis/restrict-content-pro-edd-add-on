@@ -1,6 +1,6 @@
 <?php
 /**
-* Plugin Name: 		Restrict Content Pro - Easy Digital Downloads Addon
+* Plugin Name: 		Restrict Content Pro - Easy Digital Downloads
 * Plugin URI:		https://wordpress.org/plugins/restrict-content-pro-edd-add-on/
 * Description:		Integrates Restrict Content Pro with Easy Digital Downloads
 * Version: 			1.0.0
