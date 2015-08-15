@@ -446,7 +446,7 @@ class EDD_RCP_HANNANStd {
 		}
 
 
-		if ( isset( $rcp_price ) && $rcp_price !='' && $rcp_price != $main_price ) {
+		if ( isset( $rcp_price ) && $rcp_price !=='' && $rcp_price != $main_price ) {
 			
 			$button_text = ! empty( $args['text'] ) ? '&nbsp;&ndash;&nbsp;' . $default_args['text'] : '';
 			
@@ -534,7 +534,7 @@ class EDD_RCP_HANNANStd {
 		
 		}
 
-		if ( isset( $rcp_price ) &&  $rcp_price !='' && $rcp_price != $main_price ) {
+		if ( isset( $rcp_price ) &&  $rcp_price !=='' && $rcp_price != $main_price ) {
 			$formatted_price = '<del>' . edd_currency_filter( edd_format_amount( $main_price ) ) . '</del>&nbsp;' . edd_currency_filter( edd_format_amount( $rcp_price ) );
 		}
 
@@ -584,7 +584,7 @@ class EDD_RCP_HANNANStd {
 		
 		}
 
-		if ( ! ( isset( $rcp_price ) &&  $rcp_price != '' ) || $rcp_price == $main_price )
+		if ( ! ( isset( $rcp_price ) &&  $rcp_price !== '' ) || $rcp_price == $main_price )
 			return $label;
 
 		$label 		= '';
@@ -683,7 +683,7 @@ class EDD_RCP_HANNANStd {
 											if ( ! ( isset( $rcp_price ) &&  $rcp_price != '' ) )
 												$rcp_price = self::edd_rcp_select_blank_status( $download_id , $main_price );
 											
-											if ( isset( $rcp_price ) && $rcp_price !='' && isset( $main_price ) &&  $main_price !='' && $rcp_price != $main_price ) { ?>
+											if ( isset( $rcp_price ) && $rcp_price !=='' && isset( $main_price ) &&  $main_price !='' && $rcp_price != $main_price ) { ?>
 										
 												<span class="edd_price_option_price main_price" itemprop="price">
 											
