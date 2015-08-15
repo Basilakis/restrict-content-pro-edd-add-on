@@ -1,4 +1,4 @@
-﻿=== Restrict Content Pro - Easy Digital Downloads Addon ===
+﻿=== Restrict Content Pro - Easy Digital Downloads ===
 Contributors: hannanstd
 Tags: rcp,restrict content,restrict content pro,edd,easy digital download,easy digital downloads,rcp addnons,rcp add on,edd add one,edd addone,edd addons,restrict content pro addons,restrict content pro add ons,easy digital downloads addons,easy digital download add ons
 Donate link: http://www.webforest.ir
@@ -11,7 +11,9 @@ This plugin Integrates Restrict Content Pro with Easy Digital Downloads .
 
 == Description ==
 **Restrict Content Pro - EDD Add On**
-* This plugin Integrates Restrict Content Pro with Easy Digital Downloads
+This plugin Integrates Restrict Content Pro with Easy Digital Downloads
+
+= Features =
 * Apply default EDD discounts based on RCP Subscription levels
 * Set Specific Pricing Based on RCP Subscription levels for Each Download
 * See Screenshots :)
