@@ -11,7 +11,7 @@ This plugin Integrates Restrict Content Pro with Easy Digital Downloads .
 
 == Description ==
 **Restrict Content Pro - EDD Add On**
-This plugin Integrates Restrict Content Pro with Easy Digital Downloads
+: This plugin Integrates Restrict Content Pro with Easy Digital Downloads
 
 = Features =
 * Apply default EDD discounts based on RCP Subscription levels

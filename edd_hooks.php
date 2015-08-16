@@ -379,7 +379,7 @@ class EDD_RCP_HANNANStd {
 		else
 			$rcp_price = get_post_meta( $download_id, self::edd_rcp_price_level_id() , true );
 				
-		if ( isset($rcp_price) && $rcp_price !='' )
+		if ( isset($rcp_price) && $rcp_price  !=='' )
 			return $price = $rcp_price;
 		else
 			return $price = self::edd_rcp_select_blank_status( $download_id ,$price );
@@ -401,7 +401,7 @@ class EDD_RCP_HANNANStd {
 			else 
 				$rcp_price = isset($value[self::edd_rcp_price_level_id()]) && $value[self::edd_rcp_price_level_id()] != '' ? $value[self::edd_rcp_price_level_id()] : '';
 				
-			if ( isset($rcp_price) && $rcp_price !='' ) {
+			if ( isset($rcp_price) && $rcp_price !=='' ) {
 				$prices[ $key ]['amount'] 			= $rcp_price;
 			}
 			else {
@@ -440,7 +440,7 @@ class EDD_RCP_HANNANStd {
 			else
 				$rcp_price 	= get_post_meta( $args['download_id'], self::edd_rcp_price_level_id(), true );
 		
-			if ( ! ( isset( $rcp_price ) && $rcp_price !='' )  )
+			if ( ! ( isset( $rcp_price ) && $rcp_price  !=='' )  )
 				$rcp_price = self::edd_rcp_select_blank_status( $args['download_id'] ,$main_price );
 		
 		}
@@ -481,7 +481,7 @@ class EDD_RCP_HANNANStd {
 				else
 					$rcp_price 	= isset($prices[ $price_id ][self::edd_rcp_price_level_id()]) && $prices[ $price_id ][self::edd_rcp_price_level_id()] !='' ? (float) $prices[ $price_id ][self::edd_rcp_price_level_id()] : '';
 				
-				if ( ! ( isset( $rcp_price ) && $rcp_price !='' ) )
+				if ( ! ( isset( $rcp_price ) && $rcp_price  !=='' ) )
 					$rcp_price = self::edd_rcp_select_blank_status( $download_id , $main_price );
 				
 			} else {
@@ -513,7 +513,7 @@ class EDD_RCP_HANNANStd {
 				else
 					$rcp_price 	= isset( $prices[ $min_id ][self::edd_rcp_price_level_id()] ) && $prices[ $min_id ][self::edd_rcp_price_level_id()] !='' ? $prices[ $min_id ][self::edd_rcp_price_level_id()] : '';
 				
-				if ( ! ( isset( $rcp_price ) && $rcp_price !='' ) )
+				if ( ! ( isset( $rcp_price ) && $rcp_price  !=='' ) )
 					$rcp_price = self::edd_rcp_select_blank_status( $download_id , $main_price );
 
 			}
@@ -529,7 +529,7 @@ class EDD_RCP_HANNANStd {
 			else
 				$rcp_price 	= get_post_meta( $download_id, self::edd_rcp_price_level_id() , true );
 			
-			if ( ! ( isset( $rcp_price ) && $rcp_price != '') )
+			if ( ! ( isset( $rcp_price ) && $rcp_price  !== '') )
 				$rcp_price = self::edd_rcp_select_blank_status( $download_id , $main_price );
 		
 		}
@@ -567,7 +567,7 @@ class EDD_RCP_HANNANStd {
 			else
 				$rcp_price 	= isset($prices[ $options['price_id'] ][self::edd_rcp_price_level_id()]) && $prices[ $options['price_id'] ][self::edd_rcp_price_level_id()] !='' ? $prices[ $options['price_id'] ][self::edd_rcp_price_level_id()] : '';
 			
-			if ( ! ( isset( $rcp_price ) && $rcp_price !='' ) )
+			if ( ! ( isset( $rcp_price ) && $rcp_price  !=='' ) )
 				$rcp_price = self::edd_rcp_select_blank_status( $item_id , $main_price );
 			
 		} else {
@@ -579,12 +579,12 @@ class EDD_RCP_HANNANStd {
 			else
 				$rcp_price	= get_post_meta( $item_id, self::edd_rcp_price_level_id(), true );
 			
-			if ( ! ( isset( $rcp_price ) && $rcp_price !='' ) )
+			if ( ! ( isset( $rcp_price ) && $rcp_price  !=='' ) )
 				$rcp_price = self::edd_rcp_select_blank_status( $item_id , $main_price );
 		
 		}
 
-		if ( ! ( isset( $rcp_price ) &&  $rcp_price !== '' ) || $rcp_price == $main_price )
+		if ( ! ( isset( $rcp_price ) &&  $rcp_price  !== '' ) || $rcp_price == $main_price )
 			return $label;
 
 		$label 		= '';
@@ -680,10 +680,10 @@ class EDD_RCP_HANNANStd {
 											else
 												$rcp_price	= isset( $price[self::edd_rcp_price_level_id()] ) && $price[self::edd_rcp_price_level_id()] != '' ? $price[self::edd_rcp_price_level_id()] : '';
 			
-											if ( ! ( isset( $rcp_price ) &&  $rcp_price != '' ) )
+											if ( ! ( isset( $rcp_price ) &&  $rcp_price  !== '' ) )
 												$rcp_price = self::edd_rcp_select_blank_status( $download_id , $main_price );
 											
-											if ( isset( $rcp_price ) && $rcp_price !=='' && isset( $main_price ) &&  $main_price !='' && $rcp_price != $main_price ) { ?>
+											if ( isset( $rcp_price ) && $rcp_price  !=='' && isset( $main_price ) &&  $main_price  !=='' && $rcp_price != $main_price ) { ?>
 										
 												<span class="edd_price_option_price main_price" itemprop="price">
 											
