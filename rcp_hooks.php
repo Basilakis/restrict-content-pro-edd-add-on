@@ -64,7 +64,7 @@ class RCP_EDD_HANNANStd {
 			
 				<select name="edd_discount_type" id="rcp-edd-discount-type">
 					<option value="percentage"><?php _e( 'Percentage', 'rcp' ); ?></option>
-					<option value="flat"><?php _e( 'Flat', 'rcp' ); ?></option>
+					<option value="flat"><?php _e( 'Flat amount', 'rcp' ); ?></option>
 				</select>
 				
 				<input name="edd_discount_paid_only" id="rcp-edd-discount-paid-only" type="checkbox" checked="checked" />
@@ -89,7 +89,7 @@ class RCP_EDD_HANNANStd {
 			
 				<select name="edd_discount_type" id="rcp-edd-discount-type">
 					<option value="percentage" <?php selected( $level->edd_discount_type, 'percentage' ); ?>><?php _e( 'Percentage', 'rcp' ); ?></option>
-					<option value="flat" <?php selected( $level->edd_discount_type, 'flat' ); ?>><?php _e( 'Flat', 'rcp' ); ?></option>
+					<option value="flat" <?php selected( $level->edd_discount_type, 'flat' ); ?>><?php _e( 'Flat amount', 'rcp' ); ?></option>
 				</select>
 					
 				<input name="edd_discount_paid_only" id="rcp-edd-discount-paid-only" type="checkbox"  <?php checked( true, ( !empty( $level->edd_discount_paid_only ) ? (bool) $level->edd_discount_paid_only : false ) ); ?> />
